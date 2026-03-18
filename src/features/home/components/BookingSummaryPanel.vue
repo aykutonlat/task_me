@@ -388,16 +388,18 @@ const emit = defineEmits<{
 }
 
 .why-title {
-  grid-column: 2;
-  font-size: 14px;
   font-weight: 700;
-  line-height: 1.25;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0%;
 }
 
 .why-desc {
   grid-column: 2;
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.35;
+  line-height: 100%;
+  letter-spacing: 0%;
   color: #8a846b;
 }
 
