@@ -168,7 +168,10 @@ const emit = defineEmits<{
 .summary-notes {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  width: 430px;
+  height: 59px;
+  gap: 8px;
+  opacity: 1;
 }
 
 .note-item {
@@ -176,12 +179,25 @@ const emit = defineEmits<{
   display: flex;
   align-items: flex-start;
   gap: 6px;
-  font-size: 13px;
-  line-height: 1.35;
+  font-family: Figtree, Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 .note-item.is-alert {
-  color: #1f6fff;
+  font-family: Figtree, Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #006dff;
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .note-icon.note-icon-alert {
@@ -486,5 +502,14 @@ const emit = defineEmits<{
     width: 50px;
     height: 50px;
   }
+}
+
+.summary-notes .note-item {
+  font-family: Figtree, Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 </style>
