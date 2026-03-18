@@ -361,7 +361,7 @@ const emit = defineEmits<{
 .why-book {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
 
 .why-book h4 {
@@ -381,7 +381,7 @@ const emit = defineEmits<{
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
 
 .why-book li {
@@ -461,10 +461,13 @@ const emit = defineEmits<{
 
   .booking-summary,
   .why-book {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     background: #fff;
     border: 1px solid #f1ede8;
     border-radius: 12px;
-    padding: 14px;
+    padding: 16px;
   }
 
   .summary-title {
