@@ -1,0 +1,6 @@
+export { default as BaseButton } from './button/BaseButton.vue'
+export { default as BaseInput } from './input/BaseInput.vue'
+export { default as BaseSelect } from './select/BaseSelect.vue'
+export { default as BaseCheckbox } from './checkbox/BaseCheckbox.vue'
+export { default as BaseDatePicker } from './date-picker/BaseDatePicker.vue'
+export { default as BaseAccordion } from './accordion/BaseAccordion.vue'
