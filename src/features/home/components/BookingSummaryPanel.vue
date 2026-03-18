@@ -293,8 +293,14 @@ const emit = defineEmits<{
 .price-row {
   display: flex;
   justify-content: space-between;
+}
+
+.price-row span {
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #251f00;
 }
 
 .price-row strong {
