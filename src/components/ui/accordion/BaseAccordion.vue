@@ -95,10 +95,21 @@ function handleAction(itemId: string) {
             item.description
           }}</span>
         </span>
-        <span v-if="completedItems?.includes(item.id)" class="accordion-check-icon" aria-hidden="true">
+        <span
+          v-if="completedItems?.includes(item.id)"
+          class="accordion-check-icon"
+          aria-hidden="true"
+        >
           <svg viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="10" fill="#ff6b00" />
-            <path d="M8 12l3 3 5-6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M8 12l3 3 5-6"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </span>
       </button>
@@ -117,7 +128,6 @@ function handleAction(itemId: string) {
 .base-accordion {
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
 
 .accordion-item {
@@ -136,6 +146,7 @@ function handleAction(itemId: string) {
   text-align: left;
   cursor: pointer;
   padding: 0;
+  height: 70px;
 }
 
 .accordion-trigger.is-locked {
@@ -163,6 +174,7 @@ function handleAction(itemId: string) {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: 4px;
 }
 
@@ -230,8 +242,9 @@ function handleAction(itemId: string) {
   }
 
   .accordion-trigger {
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
+    height: auto;
   }
 
   .accordion-title {
